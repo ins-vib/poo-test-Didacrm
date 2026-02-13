@@ -10,8 +10,8 @@ public class Test {
 
     public Test(ArrayList<Pregunta> preguntes, int[] respostesUsuari, int numPregunta) {
         this.preguntes = preguntes;
-        this.respostesUsuari = respostesUsuari;
-        this.numPregunta = numPregunta;
+        this.respostesUsuari = new int[preguntes.size()];
+        this.numPregunta = 0;
 
     for (int i = 0; i < respostesUsuari.length; i++) {
         respostesUsuari[i] = -1;
@@ -35,6 +35,14 @@ public boolean anarEndavant() {
         return true;
     }
     return false;
+
+}
+public boolean anarEndarrera() {
+    if (numPregunta > 0) {
+        numPregunta--;
+        return true;
+}
+return false;
 }
 public double solucionarTest() {
     double puntuacio = 0;
