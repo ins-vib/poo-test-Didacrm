@@ -5,10 +5,11 @@ public class Pregunta {
     private String[] respostes;
     private int correcta;
 
-    public Pregunta(int correcta, String enunciat, String[] respostes) {
-        this.correcta = correcta;
+    public Pregunta(String enunciat, String[] respostes, int correcta) {
         this.enunciat = enunciat;
         this.respostes = respostes;
+        this.correcta = correcta;
+        
     }
 
     public String getEnunciat() {
