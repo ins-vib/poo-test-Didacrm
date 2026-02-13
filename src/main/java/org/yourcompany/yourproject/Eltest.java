@@ -15,8 +15,8 @@ public class Eltest {
 
     public static void main(String[] args) {
         ArrayList<Pregunta> preguntes = inicialitzarPreguntes();
-        Test test = new Test(preguntes, null, 0);
-
+        Test test = new Test(preguntes);
+       
         Scanner teclat = new Scanner(System.in);
         boolean finalitzar = false;
 
@@ -56,7 +56,7 @@ public class Eltest {
             default:
                 System.out.println("Opció no vàlida");
                 continue;
-            }
+                }
         }
 
         double nota = test.solucionarTest();
@@ -79,25 +79,25 @@ public class Eltest {
 
         ArrayList<Pregunta> preguntes = new ArrayList<>();
 
-        preguntes.add(new Pregunta("Qui va pintar el Giuernica",
+        preguntes.add(new Pregunta (" Qui va pintar el Giuernica",
         new String[]{"Velàzquez", "Goya", "Picasso"}, 2));
-        preguntes.add(new Pregunta("Qui va escriure Alicia al país de les meravelles",
+        preguntes.add(new Pregunta (" Qui va escriure Alicia al país de les meravelles",
         new String[]{"Grimm", "Steveson", "Carrol"}, 2));
-        preguntes.add(new Pregunta("Quina és la magnitud que relaciona espai i temps",
+        preguntes.add(new Pregunta (" Quina és la magnitud que relaciona espai i temps",
         new String[]{"velocitat", "temperatura", "pes"}, 0));
-        preguntes.add(new Pregunta("Si el radi d'una circumferència és 4, el seu diàmetre és",
+        preguntes.add(new Pregunta (" Si el radi d'una circumferència és 4, el seu diàmetre és",
         new String[]{"4", "8", "12", "14"}, 1));
-        preguntes.add(new Pregunta("Quants segons té 1 hora",
+        preguntes.add(new Pregunta (" Quants segons té 1 hora",
         new String[]{"420", "760", "3600"}, 2));
-        preguntes.add(new Pregunta("Quin no és un llenguatge de programació",
+        preguntes.add(new Pregunta (" Quin no és un llenguatge de programació",
         new String[]{"java", "php", "samsung"}, 2));
-        preguntes.add(new Pregunta("Dins un termòmetre hi trobem",
+        preguntes.add(new Pregunta (" Dins un termòmetre hi trobem",
         new String[]{"aigua", "aigua amb gas", "mercuri"}, 2));
-        preguntes.add(new Pregunta("L'Acropolis es troba a",
+        preguntes.add(new Pregunta (" L'Acropolis es troba a",
         new String[]{"Atenes", "Roma", "París"}, 0));
-        preguntes.add(new Pregunta("L'element químic amb símbol Fe és ",
+        preguntes.add(new Pregunta (" L'element químic amb símbol Fe és ",
         new String[]{"Estronci", "Ferro", "Feril·li"}, 1));
-        preguntes.add(new Pregunta("La capital d'Estats Units és",
+        preguntes.add(new Pregunta (" La capital d'Estats Units és",
          new String[]{"Georgetown", "New York", "Washington"}, 2));
 
 
