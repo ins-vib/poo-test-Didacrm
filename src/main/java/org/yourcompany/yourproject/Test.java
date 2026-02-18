@@ -64,7 +64,7 @@ public class Test {
             }
         }
 
-        return Math.max(0, puntuacio); // no pot ser negativa
+        return Math.max(0, puntuacio); 
     }
 }
 
